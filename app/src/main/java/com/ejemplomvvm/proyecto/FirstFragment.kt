@@ -19,7 +19,7 @@ class FirstFragment : Fragment() {
         val root = inflater.inflate(R.layout.fragment_first, container, false)
         val btnNavigator = root.findViewById<Button>(R.id.btnNavigator)
         btnNavigator.setOnClickListener {
-            findNavController().navigate(FirstFragmentDirections.actionFirstFragmentToSecondFragment(name = "Lycaon97"))
+            findNavController().navigate(FirstFragmentDirections.actionFirstFragmentToSecondFragment(name = "cesar1234"))
         }
 
         return root

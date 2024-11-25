@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+        <!-- Colores personalizados -->
+        <color name="button_background">#6200EE</color> <!-- Color de fondo -->
+        <color name="button_text">#FFFFFF</color> <!-- Color del texto -->
+        <color name="button_disabled">#BDBDBD</color> <!-- Fondo de botón deshabilitado -->
+        <color name="button_pressed">#3700B3</color> <!-- Fondo de botón presionado -->
+
+
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="red">#FF0000</color>
     <color name="blue">#556FFF</color>
     <color name="green">#FF00FF00</color>
+    <color name="md_theme_onPrimary">#FFFFFF</color>
 
 
 </resources>

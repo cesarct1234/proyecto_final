@@ -1,4 +1,4 @@
-package com.ejemplomvvm.navigationcomponentexample
+package com.ejemplomvvm.proyecto
 
 import org.junit.Test
 

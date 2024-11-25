@@ -1,6 +1,7 @@
-package com.ejemplomvvm.navigationcomponentexample.ui
+package com.ejemplomvvm.proyecto.ui
 
 import android.Manifest
+import android.content.Intent
 import android.content.pm.PackageManager
 import android.media.MediaPlayer
 import android.media.MediaRecorder
@@ -10,7 +11,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
-import com.ejemplomvvm.navigationcomponentexample.databinding.ActivityGrabadoraBinding
+import com.ejemplomvvm.proyecto.databinding.ActivityGrabadoraBinding
 import java.io.IOException
 
 class GrabadoraActivity : AppCompatActivity() {
@@ -39,8 +40,18 @@ class GrabadoraActivity : AppCompatActivity() {
         binding.btnReproducir.setOnClickListener {
             reproducir()
         }
-    }
 
+        binding.btnIrACamara.setOnClickListener {
+            // Intent para ir a la actividad de la cámara
+            val intent = Intent(this, CamaraActivity::class.java)
+            startActivity(intent)
+    }
+        binding.baseDatos.setOnClickListener {
+            val intent = Intent(this, UsuariosActivity::class.java)
+            startActivity(intent)
+        }
+
+}
     private fun checkPermissions() {
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.RECORD_AUDIO)
             != PackageManager.PERMISSION_GRANTED ||

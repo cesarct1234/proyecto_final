@@ -1,4 +1,4 @@
-package com.ejemplomvvm.navigationcomponentexample
+package com.ejemplomvvm.proyecto
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.navigation.fragment.navArgs
+import com.ejemplomvvm.proyecto.R
 
 
 class SecondFragment : Fragment() {

@@ -1,16 +1,17 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    id("kotlin-kapt")
     id ("androidx.navigation.safeargs.kotlin")
 
 }
 
 android {
-    namespace = "com.ejemplomvvm.navigationcomponentexample"
+    namespace = "com.ejemplomvvm.proyecto"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.ejemplomvvm.navigationcomponentexample"
+        applicationId = "com.ejemplomvvm.proyecto"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -47,7 +48,14 @@ dependencies {
 //NavComponent
     implementation("androidx.navigation:navigation-fragment-ktx:$navVersion")
     implementation("androidx.navigation:navigation-ui-ktx:$navVersion")
-
+    //Camara
+    implementation("androidx.camera:camera-camera2:1.2.2")
+    implementation("androidx.camera:camera-lifecycle:1.2.2")
+    implementation("androidx.camera:camera-view:1.2.2")
+    // Room
+    implementation("androidx.room:room-ktx:2.6.1")
+    kapt("androidx.room:room-ktx:2.6.1")
+    kapt("androidx.room:room-compiler:2.6.1")
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)

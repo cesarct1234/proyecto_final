@@ -6,6 +6,13 @@
     android:background="@color/blue"
     tools:context=".SecondFragment">
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/calavera2" />
+
 <TextView
     android:id="@+id/tvName"
     android:layout_width="wrap_content"
@@ -14,7 +21,7 @@
     android:textColor="@color/white"
     android:textStyle="bold"
     android:textSize="40sp"
-    tools:text="Que se ice"/>
+    tools:text="Hola Mundo"/>
 
 
 

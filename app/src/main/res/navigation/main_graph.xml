@@ -9,7 +9,7 @@
 
     <fragment
         android:id="@+id/firstFragment"
-        android:name="com.ejemplomvvm.navigationcomponentexample.FirstFragment"
+        android:name="com.ejemplomvvm.proyecto.FirstFragment"
         android:label="fragment_first"
         tools:layout="@layout/fragment_first" >
         <action
@@ -21,7 +21,7 @@
 
     <fragment
         android:id="@+id/secondFragment"
-        android:name="com.ejemplomvvm.navigationcomponentexample.SecondFragment"
+        android:name="com.ejemplomvvm.proyecto.SecondFragment"
         android:label="fragment_second"
         tools:layout="@layout/fragment_second" >
         <action
@@ -35,7 +35,7 @@
 
     <fragment
         android:id="@+id/thirdFragment"
-        android:name="com.ejemplomvvm.navigationcomponentexample.ThirdFragment"
+        android:name="com.ejemplomvvm.proyecto.ThirdFragment"
         android:label="fragment_third"
         tools:layout="@layout/fragment_third" >
     </fragment>

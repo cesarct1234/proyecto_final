@@ -1,4 +1,4 @@
-package com.ejemplomvvm.navigationcomponentexample
+package com.ejemplomvvm.proyecto
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import androidx.navigation.fragment.findNavController
-
+import com.ejemplomvvm.proyecto.R
 
 class FirstFragment : Fragment() {
 
